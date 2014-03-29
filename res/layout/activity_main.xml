@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#e6e6e6"	
+    tools:context=".MainActivity" 
+    android:orientation="vertical">
+    
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_tv_title"
+        android:gravity="center_horizontal" />
+    
+    <LinearLayout
+        android:id="@+id/chart_container"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+         
+        android:orientation="horizontal"
+        >
+        
+    </LinearLayout>
+   
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#000000"
+        android:textAlignment="center" >
+
+    </ListView>
+<TextView
+    android:id="@+id/temperatureView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+	android:maxHeight="200dp"
+    android:gravity="center"
+    android:textSize="50sp" 
+    android:background="#e6e6e6"
+    android:textColor="#FF0066"
+    android:enabled="false"
+    >
+            
+   </TextView>
+<TextView
+    android:id="@+id/timeView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:textSize="22sp" 
+    android:background="#e6e6e6"
+    android:enabled="false"
+    android:textColor="#000000"
+    >
+            
+   </TextView>
+   
+<Button
+    android:id="@+id/buttonSend"
+    
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:onClick="sendMessage"
+    android:text="Set Time"
+    android:textColor="#000000"
+    android:enabled="false" 
+    />
+	
+<!-- edit -->
+
+<Button
+    android:id="@+id/buttonSweep"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:onClick="sendGet"
+    android:text="Get All Data"
+    android:textColor="#000000" 
+    android:enabled="false" />
+
+	<LinearLayout
+	    android:id="@+id/chart_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="horizontal"
+	    android:visibility="visible" >
+        
+    </LinearLayout>
+<Button
+    android:id="@+id/buttonBt"
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Refresh"
+    android:onClick="startBtDiscovery"
+    
+    
+    android:textColor="#000000"
+    />
+</LinearLayout>

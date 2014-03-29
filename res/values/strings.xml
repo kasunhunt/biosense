@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">biosense</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">biosense</string>
+    <string name="str_tv_title">data graph</string>
+</resources>
